@@ -1,0 +1,17 @@
+Number of transactions with amount > 200000:  1673570
+Fraudulent transaction types:  ['TRANSFER' 'CASH_OUT']
+Fraudulent transaction type counts:  CASH_OUT    4116
+TRANSFER    4097
+Name: type, dtype: int64
+Number of legitimate transactions of type TRANSFER:  528812
+Number of legitimate transactions of type CASH_OUT:  2233384
+Number of fraudulent TRANSFER transactions followed by a fraudulent CASH_OUT transaction:  0
+Number of originators who have made 1 transaction:  6344009
+Number of originators who have made 2 transactions:  9283
+Number of originators who have made 3 transactions:  15
+Number of originators who have made more than 3 transactions:  0
+Number of fraudulent transactions made by originators who have made more than 1 transaction:  28
+Fraction of fraudulent transactions with oldbalanceDest = 0 and newbalanceDest = 0 but amount is non-zero:  0.4955558261293072
+Fraction of legitimate transactions with oldbalanceDest = 0 and newbalanceDest = 0 but amount is non-zero:  0.36403176567065976
+Examples in cleaned data:  2770409
+Saving cleaned data to data/data_cleaned.csv
