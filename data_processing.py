@@ -159,4 +159,6 @@ cbar_ax.set_yticklabels(cbar_ax.get_yticklabels(), size=14)
 plt.savefig('plots/corr_heatmap.png')
 
 # Save out the cleaned data
+print('Examples in cleaned data: ', len(df))
+print('Saving cleaned data to data/data_cleaned.csv')
 df.to_csv('data/data_cleaned.csv', index=False)
