@@ -91,9 +91,6 @@ print(
     "Number of fraudulent transactions made by originators who have made more than 1 transaction: ",
     len(df_multiple[df_multiple["isFraud"] == 1]),
 )  # not very many, 28/8213 (0.34%)
-# Logically, the majority of fraudulent transactions are made by originators who have made only 1 transaction
-# for example, a fraudster who creates a fake account to make a fraudulent transaction
-# Perhaps there should be extra scrutiny on originators who have not made any transactions before
 
 # The data report shows that there are many transactions where oldbalanceDest = 0 and newbalanceDest = 0, but amount is
 # non-zero. This could be an indicator of fraud, so we will compare this scenario between fraudulent and
@@ -122,7 +119,7 @@ print(
     )
     / len(df_legit),
 )
-# uptick in fraudulent transactions with this scenario, so we will do some imputation to highlight this trend
+# uptick in fraudulent transactions with this scenario, so we will do some feature engineering to highlight this trend
 
 ####Data cleaning and Feature Engineering ####
 
