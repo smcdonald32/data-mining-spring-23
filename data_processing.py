@@ -36,14 +36,6 @@ print("Number of transactions with amount > 200000: ", len(df[df["amount"] > 200
 # isFlaggedFraud only has 16 entries of the 1673570 entries with amount > 200000
 # inconsistent with the description of isFlaggedFraud where it is supposed to be 1 if amount > 200000
 
-# # Are there any outliers in the amount column for valid and fraudulent transactions?
-# # 3 boxplots: all transactions, valid transactions, fraudulent transactions plotted side by side
-# plt.boxplot([df['amount'], df[df['isFraud'] == 0]['amount'], df[df['isFraud'] == 1]['amount']],
-#             labels=['All Transactions', 'Valid Transactions', 'Fraudulent Transactions'])
-# plt.ylabel('Transaction Amount')
-# plt.show()
-
-
 # What are the transaction types (and respective counts) among the fraudulent examples?
 print("Fraudulent transaction types: ", df[df["isFraud"] == 1]["type"].unique())
 print(
