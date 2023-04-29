@@ -162,6 +162,7 @@ cython_debug/
 # VSCode debug configuration
 .vscode/launch.json
 
-# unzipped Data files
+# unzipped/system Data files
 data/data_raw.csv
 data/data_cleaned.csv
+.DS_Store
